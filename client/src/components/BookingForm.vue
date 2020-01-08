@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import { eventBus } from '@main/js'
-import BookingsService from '@/services/BookingsService.js'
+import { eventBus } from '@/main.js'
+import BookingsService from '@/services/BookingService.js'
 
 export default {
   name:'booking-form',

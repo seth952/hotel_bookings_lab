@@ -9,7 +9,7 @@
 import BookingForm from './components/BookingForm';
 import BookingsGrid from './components/BookingsGrid';
 import { eventBus } from './main';
-import BookingService from './services/SBookingService';
+import BookingService from './services/BookingService';
 
 export default {
   name: 'app',
@@ -20,7 +20,7 @@ export default {
   },
   components: {
     'booking-form': BookingForm,
-    'booking-grid': BookingGrid
+    'booking-grid': BookingsGrid
   },
   mounted(){
     this.fetchData();
@@ -47,7 +47,6 @@ html {
 }
 
 body {
-  background: url('./assets/birds-background.jpg') no-repeat;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;

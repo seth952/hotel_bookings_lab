@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import { eventBus } from '@/main.js'
-import BookingService from '@/services/BookingService.js'
+import { eventBus } from '../main.js'
+import BookingService from '../services/BookingService.js'
 import BookingCard from './BookingCard'
 
 export default {
@@ -14,7 +14,7 @@ export default {
     return {
       bookings: []
     }
-  }
+  },
   mounted(){
     BookingService.getBookings()
     .then(bookings => this.bookings = bookings);
