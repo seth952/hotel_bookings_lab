@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <booking-form />
-    <booking-grid :bookings="bookings" />
+    <booking-grid  />
   </div>
 </template>
 
@@ -13,11 +13,6 @@ import BookingService from './services/BookingService';
 
 export default {
   name: 'app',
-  data () {
-    return {
-      bookings: []
-    }
-  },
   components: {
     'booking-form': BookingForm,
     'booking-grid': BookingsGrid

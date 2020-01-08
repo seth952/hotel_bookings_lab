@@ -1,5 +1,5 @@
 <template lang="html">
-  <form class="" v-on:submit="addGuest" method="post">
+  <form class="" v-on:submit="addBooking" method="post">
     <h2>Add a Booking</h2>
     <label for="name">Name:</label>
     <input type="text" id="name" v-model="name" required/>
@@ -17,7 +17,7 @@
 
 <script>
 import { eventBus } from '@/main.js'
-import BookingsService from '@/services/BookingService.js'
+import BookingService from '@/services/BookingService.js'
 
 export default {
   name:'booking-form',

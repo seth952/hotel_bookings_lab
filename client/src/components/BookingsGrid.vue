@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="booking-wrapper">
-    <booking-card v-for="(booking, index) in bookings" :key="index" :booking="booking"
+    <booking-card v-for="(booking, index) in bookings" :key="index" :booking="booking"/>
   </div>
 </template>
 
