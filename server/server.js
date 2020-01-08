@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const parser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient;
-const createRouter = require('@/helpers/create_router.js')
+const createRouter = require('./helpers/create_router.js')
 const cors = require('cors')
 
 app.use(parser.json());
@@ -16,6 +16,6 @@ MongoClient.connect('mongodb://localhost:27017')
   app.use('/api/guests', guestsRouter)
 })
 
-app.listen(3000 function () {
+app.listen(3000, function () {
   console.log(`listening on the year ${this.address().port}`)
 })
